@@ -4,6 +4,10 @@ spring:
   cloud:
     config:
       server:
+        enabled: true
         git:
-          uri: https://github.com/taenypapa/spring-cloud-config
+          uri: https://github.com/taenypapa/spring-cloud-config.git
           basedir: config
+
+
+debug: true
