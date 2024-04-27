@@ -1,2 +1,5 @@
 demo:
   message: Hello World!!
+
+server:
+  port: 9001
