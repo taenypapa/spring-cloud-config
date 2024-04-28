@@ -2,6 +2,7 @@ package com.taeny.papa.scc.client;
 
 import com.taeny.papa.scc.client.properties.DemoProperties;
 import lombok.RequiredArgsConstructor;
+import org.apache.coyote.Response;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;

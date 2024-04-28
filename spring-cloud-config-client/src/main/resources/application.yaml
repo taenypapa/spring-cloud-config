@@ -8,7 +8,15 @@ spring:
   config:
     import: optional:configserver:http://localhost:9000
 
-debug: true
+# actuator 설정
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
 
 server:
   port: 9001

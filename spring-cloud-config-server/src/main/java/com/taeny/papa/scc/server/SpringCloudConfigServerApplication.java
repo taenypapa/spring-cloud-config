@@ -1,4 +1,4 @@
-package com.taeny.papa.scc;
+package com.taeny.papa.scc.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
