@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-cloud-config-client
+
+  cloud:
+    config:
+      name: config-bus
+  config:
+    import: optional:configserver:http://localhost:9000
+
+debug: true
+
+server:
+  port: 9001

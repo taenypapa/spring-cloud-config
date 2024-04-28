@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-cloud-config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/taenypapa/spring-cloud-config
+          search-paths: /demo
+server:
+  port: 9000
+
+# actuator 설정
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
