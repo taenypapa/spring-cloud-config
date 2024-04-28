@@ -8,16 +8,21 @@ spring:
         git:
           uri: https://github.com/taenypapa/spring-config.git
         enabled: true
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
 server:
-  port: 9000
+  port: 9001
 
 # actuator 설정
 management:
   endpoints:
     web:
       exposure:
-        include: "*"
-  endpoint:
-    shutdown:
-      enabled: true
+        include: bus-refresh
+
 debug: true

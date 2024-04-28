@@ -1,12 +1,7 @@
 spring:
   application:
-    name: spring-cloud-config-client
+    name: spring-cloud-bus
 
-  cloud:
-    config:
-      name: config-bus
-  config:
-    import: optional:configserver:http://localhost:9001
   rabbitmq:
     host: localhost
     port: 5672
@@ -21,4 +16,4 @@ management:
         include: bus-refresh
 
 server:
-  port: 9002
+  port: 9000
